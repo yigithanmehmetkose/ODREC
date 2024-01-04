@@ -24,13 +24,13 @@ v_prop = C3H8_vapor;
 % v_prop = O2_vapor;
 
 %General Engine Properties
-Fuel = 'C3H8(L)';            %fuel name
+Fuel = 'C3H8(L)';           %fuel name
 Oxidizer = 'O2(L)';         %oxidizer name
-OF = 3.9;                     %oxidizer/fuel mixture ratio
+OF = 3.9;                   %oxidizer/fuel mixture ratio
 Pc = 26e5;                  %combustion chamber pressure, Pa
 Ft = 15e3;                  %thrust, N
 P_ambient = 1e5;            %ambient pressure, Pa
-T_f_c = 231.076;             %fuel temperature entering combustion chamber, K
+T_f_c = 231.076;            %fuel temperature entering combustion chamber, K
 T_o_c = 90.170;             %oxidizer temperature entering combustion chamber, K
 
 %Engine Wall Material
@@ -49,9 +49,9 @@ h = 0.005;                  %cooling channel height, m
 y = 0.005;                  %thickness at channel base, m
 
 %Coolant Vapor Table Specifiscations
-P_1 = 25e5;                 %pressure in first spreadsheet of vapor properties, Pa
-P_l = 50e5;                 %pressure in last spreadsheet of vapor properties, Pa
-N_p = 6;                    %number of spreadsheets of vapor properties
+P_1 = 25e5;                 %pressure in first table of vapor properties, Pa
+P_l = 50e5;                 %pressure in last table of vapor properties, Pa
+N_p = 6;                    %number of tables of vapor properties
 
 %Thrust Chamber Profile
 L_star = 0.3;               %characteristic length, m
