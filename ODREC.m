@@ -21,8 +21,6 @@ classdef ODREC
         Z               %radial coordinate
         X_g             %vapor fraction
         mdot_c          %coolant mass flowrate
-        Cdot            %heat capacity
-        htc             %heat transfer coefficient
     end
 
     properties (Access = private)
@@ -488,8 +486,6 @@ classdef ODREC
                         end
                     end
                 end
-                C_c(t) = obj.mdot_c*N*Cp_c;
-                u(t) = u_c_f;
             end
             obj.Tem_c = T_c;
             obj.p_c = P_c;
@@ -497,8 +493,6 @@ classdef ODREC
             obj.T_w = T_w_i;
             obj.Ma = M;
             obj.X_g = vf;
-            obj.Cdot = C_c;
-            obj.htc = u;
             obj.X = x;
             obj.Z = Y;
         end
