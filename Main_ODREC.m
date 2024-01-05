@@ -95,7 +95,6 @@ inputs.h = h;
 
 Results = ODREC(inputs,l_prop,s_prop,v_prop);
 Results = Results.Thermal_Analysis(inputs);
-heat_cap = Results.Cdot;
 Tw = Results.T_w;
 
 %% Plots
