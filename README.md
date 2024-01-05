@@ -36,7 +36,11 @@ where *inputs* is a struct with the following fields:
 * *w*: width of the cooling channels
 * *h*: height of the cooling channels
 
-
+Some remarks about *inputs*:
+* Only those fuel and oxidizer names that are accepted in NASA CEA website (https://cearun.grc.nasa.gov/) can be used.
+* Only those *T_o_c* and *T_f_c* values that are accepted in NASA CEA website can be used. For most propellants, these values are the saturation temperatures at the sea level. Note that *T_o_c* and *T_f_c* values do not change the analysis much.
+* *y*,*w*, and *h* can be given as constants or variables throughout the thrust chamber. If they are variables, they can just be given as an array thoughout the axial position.
+* If desired, an additional input field of *w_b*, which is the rib or channel wall width, can be provided
 
 
 
