@@ -52,8 +52,9 @@ where *geom* is a matrix storing the axial position versus radial position of th
 where X is the axial, Y is the radial position.
 
 Some remarks about the coolant properties:
-
-
+* *l_prop*: a matrix storing the thermophysical properties of the coolant in liquid form, which includes 5 columns of arbitrary length. The first column is the temperature, and the others are the corresponding density, specific heat, dynamic viscosity and thermal conductivity, respectively. Temperature range should approximately cover the working temperature range. The properties could be obtained from NIST (https://webbook.nist.gov/chemistry/fluid/) at a pressure value similar to the working pressure. **Note that all properties should be in SI units**
+* *s_prop*: a matrix storing the thermophysical properties of the coolant in liquid form, which includes 12 columns of arbitrary length. The columns are temperature, pressure, saturated liquid density, saturated liquid specific enthalpy, saturated liquid specific heat, saturated liquid dynamic viscosity, saturated liquid thermal conductivity, saturated vapor density, saturated vapor specific enthalpy, saturated vapor specific heat, saturated vapor dynamic viscosity, and saturated vapor thermal conductivity, respectively.
+* *v_prop*: a 3-dimensional array storing the thermophysical properties of the coolant in liquid form, which includes 5 matrices, each of which has 5 columns of arbitrary length.
 
 
 
